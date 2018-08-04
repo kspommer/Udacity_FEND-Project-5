@@ -1,32 +1,33 @@
-# Mobile Web Specialist Certification Course
+# Front End Web Developer Nanogree
+# Project 5:  Restaurant Reviews
+# (Project also part of Mobile Web Specialist Certification Course)
+# Susan Pommer
+# August 2018
 ---
-#### _Three Stage Course Material Project - Restaurant Reviews_
+### Restaurant Reviews
 
-## Project Overview: Stage 1
+## Overview
+Converted a provided static webpage to a mobile-ready web application.
+Part 1: Implemented responsive design for different sized displays
+Part 2: Implemented accessiblility for screen reader use
+Part 3: Implemented a service worker to cache static pages to provide basic offline experience.
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+## Materials Provided
+Student was provided the static web code for a restaurant reviews website. 
 
-### Specification
+## Launched the Application
+1. Start up a simple HTTP server to serve up the site files on your local computer using Python tools.
+2. In a terminal, check the version of Python you have: `python -V`. 
+2a.  If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000`
+2b.  If you have Python 3.x, you can use `python3 -m http.server 8000`. 
+2c.  If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+3. With your server running, launch: `http://localhost:8000`
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
-
-### What do I do from here?
-
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
-
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
-
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
-
-## Leaflet.js and Mapbox:
-
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
+## Integrated Tools:  Leaflet.js and Mapbox:
+This project uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). 
+My application uses mapbox token `<pk.eyJ1Ijoic3BvbSIsImEiOiJjamtmbHN0MXQwYTA4M3FtbDVuZnB1cGV4In0.wnNFZW1W08j56Z1KM0JQuQ>` 
+Token obtained from [Mapbox](https://www.mapbox.com/). 
+Mapbox API is free to use. 
 
 ### Note about ES6
-
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
-
-
-
+Code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code.
