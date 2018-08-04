@@ -171,15 +171,29 @@ nav h1 a {
     height: auto
   }
 }
-#restaurants-list li {
-  background-color: #fff;
-  border: 2px solid #ccc;
-  font-family: Arial,sans-serif;
-  margin: 15px;
-  min-height: 380px;
-  padding: 0 30px 25px;
-  text-align: left;
-  width: 270px;
+@media screen and (min-width: 430px) {
+  #restaurants-list li {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    font-family: Arial,sans-serif;
+    margin: 15px;
+    min-height: 380px;
+    padding: 0 30px 25px;
+    text-align: left;
+    width: 270px;
+  }
+}
+@media screen and (max-width: 429px) {
+  #restaurants-list li {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    font-family: Arial,sans-serif;
+    margin: 15px;
+    height: auto; /* changed */
+    padding: 0 30px 25px;
+    text-align: left;
+    width: 270px;
+  }
 }
 /* SP added media queries (2x) */
 @media screen and (min-width: 430px) {
