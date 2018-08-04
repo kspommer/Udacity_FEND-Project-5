@@ -164,6 +164,12 @@ nav h1 a {
     margin: 0;
     padding: 30px 15px 60px;
     text-align: center;
+    /* SP add: flexbox */
+    display: flex;
+    flex-wrap: wrap;
+    /* SP add:  scaling */
+    width: 90%;
+    height: auto
   }
 }
 
@@ -288,7 +294,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
