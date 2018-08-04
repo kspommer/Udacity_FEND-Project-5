@@ -25,7 +25,7 @@ Student was provided the static web code for a restaurant reviews website.
 
 ## Integrated Tools:  Leaflet.js and Mapbox:
 This project uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). 
-My application uses mapbox token `<pk.eyJ1Ijoic3BvbSIsImEiOiJjamtmbHN0MXQwYTA4M3FtbDVuZnB1cGV4In0.wnNFZW1W08j56Z1KM0JQuQ>` 
+My application uses mapbox token `<ppk.eyJ1Ijoic3BvbSIsImEiOiJjamtmbzQ4Ym8wYWx0M3dsZW1yNTQ3cnM3In0.LhsYkhst4JdQgj8MZobDuw>` 
 Token obtained from [Mapbox](https://www.mapbox.com/). 
 Mapbox API is free to use. 
 
