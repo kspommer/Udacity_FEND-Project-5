@@ -67,6 +67,11 @@ nav {
   height: 80px;
   background-color: #252831;
   text-align:center;
+  /* SP added:  flexbox to 
+  vertically align header text */;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav h1 {
   margin: auto;
@@ -143,7 +148,7 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Listing ====================== */
-/* SP added media queries (2x) */
+/* SP added media queries */
 @media screen and (min-width: 430px) {
   #restaurants-list {
     background-color: #f3f3f3;
@@ -154,6 +159,24 @@ nav h1 a {
     /* SP Add: flexbox container */
     display: flex;
     flex-wrap: wrap;
+  }
+  #restaurants-list li {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    font-family: Arial,sans-serif;
+    margin: 15px;
+    min-height: 380px;
+    padding: 0 30px 25px;
+    text-align: left;
+    width: 270px;
+  }
+  #restaurants-list .restaurant-img {
+    background-color: #ccc;
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    min-height: 248px;
+    min-width: 100%;
   }
 }
 @media screen and (max-width: 429px) {
@@ -170,20 +193,6 @@ nav h1 a {
     width: 90%;
     height: auto
   }
-}
-@media screen and (min-width: 430px) {
-  #restaurants-list li {
-    background-color: #fff;
-    border: 2px solid #ccc;
-    font-family: Arial,sans-serif;
-    margin: 15px;
-    min-height: 380px;
-    padding: 0 30px 25px;
-    text-align: left;
-    width: 270px;
-  }
-}
-@media screen and (max-width: 429px) {
   #restaurants-list li {
     background-color: #fff;
     border: 2px solid #ccc;
@@ -194,24 +203,11 @@ nav h1 a {
     text-align: left;
     width: 270px;
   }
-}
-/* SP added media queries (2x) */
-@media screen and (min-width: 430px) {
   #restaurants-list .restaurant-img {
     background-color: #ccc;
     display: block;
     margin: 0;
-    max-width: 100%;
-    min-height: 248px;
-    min-width: 100%;
-  }
-}
-@media screen and (max-width: 429px) {
-  #restaurants-list .restaurant-img {
-    background-color: #ccc;
-    display: block;
-    /* has different variables */
-    margin: 0;
+    /* added scaling */
     width: 100%;
     height: auto;
   }
