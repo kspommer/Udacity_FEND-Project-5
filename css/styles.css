@@ -240,19 +240,51 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-.inside header {
+header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
-.inside #map-container {
-  background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
+/* SP added flexbox to main container */
+@media screen and (max-width: 999px) {
+  #maincontent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #map-container {
+    background: blue none repeat scroll 0 0;
+    height: 300px;
+    position: relative;
+    order: 1;
+    top: 130px;
+    width: 100%;
+  }  
+  #restaurant-container {
+    order: 2; 
+    width: 100%;
+  }
+  #reviews-container {
+    order: 3; 
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .inside #map-container {
+    background: blue none repeat scroll 0 0;
+    height: 87%;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 50%;
+  }
+  #restaurant-container {
+    width: 50%;
+  }
+  #reviews-container {
+    width: 50%;
+  }
 }
 .inside #map {
   background-color: #ccc;
@@ -262,7 +294,8 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  /* SP edited width */
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -297,10 +330,10 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
-  width: 50%;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  /* SP adjusted RH padding */
+  padding: 30px 40px 30px;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -315,9 +348,6 @@ nav h1 a {
   /* SP add: flexbox */
   display: flex;
   flex-wrap: wrap;
-  /* SP add:  scaling */
-  width: 80%;
-  height: auto
 }
 #reviews-list li {
   background-color: #fff;
@@ -326,7 +356,7 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 0px 20px 20px;
   position: relative;
   width: 85%;
 }
