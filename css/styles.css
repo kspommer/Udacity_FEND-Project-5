@@ -312,6 +312,12 @@ nav h1 a {
 #reviews-list {
   margin: 0;
   padding: 0;
+  /* SP add: flexbox */
+  display: flex;
+  flex-wrap: wrap;
+  /* SP add:  scaling */
+  width: 80%;
+  height: auto
 }
 #reviews-list li {
   background-color: #fff;
