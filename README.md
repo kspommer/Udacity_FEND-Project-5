@@ -1,10 +1,10 @@
-# Front End Web Developer Nanogree
-# Project 5:  Restaurant Reviews
-# (Project also part of Mobile Web Specialist Certification Course)
-# Susan Pommer
-# August 2018
+### Front End Web Developer Nanogree
+### Project 5:  Restaurant Reviews
+### (Project also part of Mobile Web Specialist Certification Course)
+### Susan Pommer
+### August 2018
 ---
-### Restaurant Reviews
+## Restaurant Reviews
 
 ## Overview
 Converted a provided static webpage to a mobile-ready web application.
@@ -31,3 +31,7 @@ Mapbox API is free to use.
 
 ### Note about ES6
 Code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code.
+
+### Resources Used
+box-sizing: border-box: 
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
