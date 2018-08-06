@@ -82,6 +82,7 @@ nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
+/* Added to media queries
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
@@ -89,7 +90,7 @@ nav h1 a {
     font-size: 17px;
     margin: 0;
     width: calc(50% - 80px);
-}
+}*/
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
@@ -244,6 +245,7 @@ nav h1 a {
   display: flex;
   flex-wrap: wrap; 
   width: 100%;
+  box-sizing: border-box;
 }
 /* SP added flexbox to main container */
 @media screen and (max-width: 999px) {
@@ -252,6 +254,7 @@ nav h1 a {
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
+    box-sizing: border-box;
   }
   .inside #map-container {
     background: blue none repeat scroll 0 0;
@@ -264,14 +267,22 @@ nav h1 a {
   .inside #restaurant-container {
     order: 2; 
     width: 100%;
+    box-sizing: border-box;
   }
   .inside #reviews-container {
     order: 3;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
   }
-  .inside #restaurant-img {
-    height: auto;
-    width: 90%;
+  #breadcrumb {
+    padding: 10px 40px 16px;
+    list-style: none;
+    background-color: #eee;
+    font-size: 17px;
+    margin: 0;
+    width: 100%
   }
 }
 @media screen and (min-width: 1000px) {
@@ -284,13 +295,20 @@ nav h1 a {
     width: 50%;
   }
   .inside #restaurant-container {
-    width: 42%;
+    width: 50%;
   }
   .inside #reviews-container {
-    width: 42%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
   }
-  .inside #restaurant-img {
-    width: 90%;
+  #breadcrumb {
+    padding: 10px 40px 16px;
+    list-style: none;
+    background-color: #eee;
+    font-size: 17px;
+    margin: 0;
+    width: calc(50% - 80px);
   }
 }
 .inside #map {
@@ -298,11 +316,16 @@ nav h1 a {
   height: 100%;
   width: 100%;
 }
+.inside #restaurant-img {
+  width: 90%;
+  height: auto;
+}
 .inside #footer {
   bottom: 0;
   position: absolute;
   /* SP edited width */
   width: 100%;
+  box-sizing: border-box;
 }
 #restaurant-name {
   color: #f18200;
@@ -371,3 +394,8 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+
+/*  Resources used:  ;
+box-sizing: border-box: 
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
