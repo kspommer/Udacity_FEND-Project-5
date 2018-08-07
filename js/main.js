@@ -172,8 +172,12 @@ createRestaurantHTML = (restaurant) => {
   setAlt.value = restaurant.alt;
   image.setAttributeNode(setAlt);    
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
+  /* SP add tabindex to name so it is read */
+  var setTabIndex = document.createAttribute("tabindex");
+  setTabIndex.value = "0";
+  name.setAttributeNode(setTabIndex);
   li.append(name);
 
   const neighborhood = document.createElement('p');
