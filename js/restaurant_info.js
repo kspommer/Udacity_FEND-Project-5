@@ -89,6 +89,14 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  /* add an alt attribute to img */
+  /* note: alt data added to restaurants.json file */
+  /* reference:  https://www.w3schools.com/jsref/met_document_createattribute.asp*/
+  /* Create a "alt" attribute */
+  var setAlt = document.createAttribute("alt"); 
+  /* Set the value of the alt attribute */
+  setAlt.value = restaurant.alt;
+  image.setAttributeNode(setAlt);
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
