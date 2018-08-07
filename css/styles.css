@@ -11,8 +11,7 @@ body,td,th,p{
 	color: #333;
 	line-height: 1.5;
 }
-/* Added SP */
-/* Set max width of all images to 100% */
+/* SP added: Set max width of all images to 100% */
 img {
   max-width = 100%;
 }
@@ -48,6 +47,19 @@ h2 {
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+.skip-link {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  background: #BF1722;
+  color: white;
+  padding: 8px; 
+  z-index: 150;
+}
+/* could not get this to work 
+.skip-link: focus {
+  top: 0;
+}*/
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
@@ -241,7 +253,7 @@ nav h1 a {
 .inside header {
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
   display: flex;
   flex-wrap: wrap; 
   width: 100%;
