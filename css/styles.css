@@ -51,18 +51,18 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   position: fixed; 
   top: 0;
   left: 0;
-  background: #BF1722;
-  color: white;
+  color: black;
   padding: 8px; 
   z-index: 1500;
 }
-/* could not get this to work  */
-.skip-link: focus {
-  top: 0;
+/* I could not get to work :-( */
+skip-link: focus {
+  color: red;
 }
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+  margin-top: 80px;
 }
 #footer {
   background-color: #444;
@@ -82,7 +82,6 @@ nav {
   height: 80px;
   background-color: #252831;
   text-align:center;
-  /* SP added: vertically align header text */;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,16 +122,9 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
-#main-content #map-container {
-  width: 100%;
-  height: auto;
-  position: relative;
-  order: 1;
-}
-
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  position: relative;
+  position: relative
   order: 2;
   width: 100%;
   height: auto; /* SP change */
@@ -158,10 +150,15 @@ nav h1 a {
   padding: 0 10px;
   width: 200px;
 }
-
 /* ====================== Restaurant Listing ====================== */
 /* SP added media queries */
 @media screen and (min-width: 430px) {
+  /*#map-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    order: 1;
+  }*/
   #restaurants-list {
     background-color: #f3f3f3;
     list-style: outside none none;
@@ -198,10 +195,10 @@ nav h1 a {
     margin: 0;
     padding: 30px 15px 60px;
     text-align: center;
-    /* SP add: flexbox */
+    /* SP add flexbox */
     display: flex;
     flex-wrap: wrap;
-    /* SP add:  scaling */
+    /* SP add scaling */
     width: 90%;
     height: auto
   }
@@ -269,16 +266,21 @@ nav h1 a {
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
+    margin-top: 120px;
   }
   .inside #map-container {
     background: blue none repeat scroll 0 0;
-    height: 300px;
+    height: 400px;
     position: relative;
     order: 1;
-    top: 130px;
     width: 100%;
     z-index: 50;
   }  
+  .inside #map {
+    background-color: #ccc;
+    height: 100%;
+    width: 100%; 
+  }
   .inside #restaurant-container {
     order: 2; 
     width: 100%;
@@ -303,25 +305,22 @@ nav h1 a {
   }
 }
 @media screen and (min-width: 1000px) {
+  .inside #maincontent {
+    margin-top: 80px;
+  }
   .inside #map-container {
     background: blue none repeat scroll 0 0;
-    height: 87%;
+    height: 83%;
     position: fixed; 
     right: 0;
-    top: 80px;
     width: 50%;
     z-index: 50;
   }
-  .inside #restaurant-container {
-    width: 50%;
-    padding: 16px;
-  }
-  .inside #reviews-container {
-    width: 50%;
-    padding: 16px;
-    display: flex;
-    flex-wrap: wrap;
-  }
+  .inside #map {
+    background-color: #ccc;
+    height: 100%;
+    width: 100%;
+  } 
   #breadcrumb {
     padding: 10px 40px 16px;
     position:  fixed;
@@ -330,13 +329,24 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
+    order: 1;
     width: calc(50% - 80px);
   }
-}
-.inside #map {
-  background-color: #ccc;
-  height: 100%;
-  width: 100%;
+  .inside #restaurant-container {
+    order: 2;
+    width: 50%;
+    height: auto;
+    padding: 50px 16px 16px;
+    margin-top: 80px;
+  }
+  .inside #reviews-container {
+    order: 3;
+    width: 50%;
+    height: auto;
+    padding: 16px 16px 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .inside #restaurant-img {
   width: 90%;
@@ -378,7 +388,7 @@ nav h1 a {
 #restaurant-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
+  padding: 30px 40px 30px;
 }
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
@@ -419,4 +429,4 @@ nav h1 a {
 
 /*  Resources used:  ;
 box-sizing: border-box: 
-https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+https://developer.mozilla.jorg/en-US/docs/Web/CSS/box-sizing */
