@@ -9,9 +9,9 @@ if(navigator.serviceWorker) {
 	// delay until after page load 
 	window.addEventListener('load', function() {	
 		navigator.serviceWorker.register('/sw.js').then(function() {
-			console.log("success!");
+			console.log("Service worker registered");
 		}).catch(function() {
-  			console.log("failed");
+  			console.log("Service worker registration failed");
 		}); 
 	});
 }
